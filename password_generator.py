@@ -14,16 +14,16 @@ password = ""
 len(letters)
 
 # continue loop to choose the correct number of letters for letter_choice
-for choice in range(1, letters_choice+1):
+for choice in range(letters_choice):
     # generate a random number between 0 and length of list. Use this number as index for list to generate a random letter. Then add it to password
     letter = letters[random.randint(0, len(letters)-1)]
     password += letter
 
-for choice in range(1, numbers_choice+1):
+for choice in range(numbers_choice):
     number = numbers[random.randint(0, len(numbers)-1)]
     password += number
 
-for choice in range(1, symbols_choice+1):
+for choice in range(symbols_choice):
     symbol = symbols[random.randint(0, len(symbols)-1)]
     password += symbol
 
